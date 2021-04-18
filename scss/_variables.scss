@@ -1,0 +1,35 @@
+$ctaGreen: #00B894;
+$db: #323232;
+$white: #fff;
+$gray: #707070;
+
+
+
+
+
+// Helping Clasess 
+
+.heading {
+  text-align: center;
+  h1 {
+    font-size: 42px;
+    padding-bottom: 130px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 34%;
+      bottom: 149px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 426px;
+      height: 10px;
+      background-color: #00B894;
+      filter: blur(19px);
+    }
+  }
+}
+.pd {
+  padding: 150px 0;
+}

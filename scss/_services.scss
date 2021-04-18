@@ -1,0 +1,53 @@
+.services {
+  overflow: hidden;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:70px 20px;
+    P {
+      color: $gray;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-top: 13px;
+    }
+    .feature {
+      i {
+        font-size: 45px;
+        margin-bottom: 25px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    .one {
+      i {
+        color: #F9CA24;
+      }
+    }
+    .two {
+      i {
+        color: #BE2EDD;
+      }
+    }
+    .three {
+      i {
+        color: #E66D6D;
+      }
+    }
+    .four {
+      i {
+        color: #6AB04C;
+      }
+    }
+    .five {
+      i {
+        color: #22A6B3;
+      }
+    }
+    .six {
+      i {
+        color: #4834D4;
+      }
+    }
+  }
+}

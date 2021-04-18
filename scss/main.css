@@ -1,0 +1,251 @@
+.heading {
+  text-align: center; }
+  .heading h1 {
+    font-size: 42px;
+    padding-bottom: 130px;
+    position: relative; }
+    .heading h1::after {
+      content: '';
+      position: absolute;
+      left: 34%;
+      bottom: 149px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 426px;
+      height: 10px;
+      background-color: #00B894;
+      filter: blur(19px); }
+
+.pd {
+  padding: 150px 0; }
+
+header {
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  position: relative; }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 99; }
+    header .overlay .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/untitled.png");
+      background-size: cover;
+      background-position: center;
+      opacity: .3; }
+  header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    padding: 60px 0; }
+    header .content .logo a {
+      color: #00B894;
+      font-weight: bold;
+      font-size: 30px; }
+    header .content nav a {
+      display: inline-block;
+      font-size: 15px;
+      margin-left: 26px; }
+    header .content nav .btn {
+      margin-left: 38px;
+      padding: 8px 30px;
+      border: 1px solid #00B894;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #00B894;
+      transition: .3s; }
+      header .content nav .btn:hover {
+        color: #323232;
+        background-color: transparent; }
+  header .container .hero {
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    z-index: 999; }
+    header .container .hero .text p:first-of-type {
+      font-size: 29px; }
+      header .container .hero .text p:first-of-type span {
+        color: #00B894;
+        font-weight: 600; }
+    header .container .hero .text h1 {
+      font-size: 40px;
+      margin: 17px 0 26px; }
+    header .container .hero .text p:last-of-type {
+      width: 71%;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #707070;
+      margin-bottom: 40px; }
+    header .container .hero .text .btns a {
+      display: inline-block;
+      width: 181px;
+      height: 46px;
+      text-align: center;
+      line-height: 43px;
+      transition: .3s; }
+    header .container .hero .text .btns .green {
+      margin-right: 10px;
+      background-color: #00B894;
+      border: 1px solid #00B894;
+      color: #fff; }
+      header .container .hero .text .btns .green:hover {
+        color: #323232;
+        background-color: transparent; }
+    header .container .hero .text .btns .black {
+      background-color: #323232;
+      border: 1px solid #323232;
+      color: #fff; }
+      header .container .hero .text .btns .black:hover {
+        color: #323232;
+        background-color: transparent; }
+
+.about-me {
+  overflow: hidden; }
+  .about-me .content {
+    display: flex;
+    justify-content: center; }
+    .about-me .content .text {
+      flex: 2; }
+    .about-me .content .circlles {
+      flex: 1; }
+    .about-me .content .text h3 {
+      position: relative;
+      padding-bottom: 7px;
+      font-size: 20px;
+      margin-bottom: 40px; }
+      .about-me .content .text h3::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 44px;
+        height: 2px;
+        background-color: #00B894; }
+    .about-me .content .text p:first-of-type {
+      font-size: 26px;
+      font-weight: bold; }
+    .about-me .content .text p:last-of-type {
+      margin-top: 34px;
+      color: #707070;
+      line-height: 1.8;
+      width: 94%; }
+    .about-me .content .circlles {
+      display: flex;
+      justify-content: center;
+      position: relative; }
+      .about-me .content .circlles .circlle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute; }
+        .about-me .content .circlles .circlle .text {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+          .about-me .content .circlles .circlle .text p {
+            margin: 0;
+            color: #fff; }
+          .about-me .content .circlles .circlle .text p:first-child {
+            font-weight: bold;
+            font-size: 30px; }
+          .about-me .content .circlles .circlle .text p:last-child {
+            font-size: 13px; }
+      .about-me .content .circlles .one {
+        background-color: #BE2EDD;
+        top: 0;
+        left: -28px; }
+      .about-me .content .circlles .two {
+        background-color: #F9CA24;
+        top: 0;
+        right: 0; }
+      .about-me .content .circlles .third {
+        background-color: #FF7675;
+        bottom: -60px; }
+
+.services {
+  overflow: hidden; }
+  .services .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 20px; }
+    .services .row P {
+      color: #707070;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-top: 13px; }
+    .services .row .feature i {
+      font-size: 45px;
+      margin-bottom: 25px; }
+    .services .row .feature h3 {
+      font-size: 20px; }
+    .services .row .one i {
+      color: #F9CA24; }
+    .services .row .two i {
+      color: #BE2EDD; }
+    .services .row .three i {
+      color: #E66D6D; }
+    .services .row .four i {
+      color: #6AB04C; }
+    .services .row .five i {
+      color: #22A6B3; }
+    .services .row .six i {
+      color: #4834D4; }
+
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Roboto Slab', serif;
+  height: 100000px;
+  line-height: 1.3;
+  color: #323232; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #323232; }
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 85%; } }
+
+/*# sourceMappingURL=main.css.map */
