@@ -2,6 +2,7 @@
 @import 'header';
 @import 'about__me';
 @import 'services';
+@import 'skills';
 
 html {
   font-size: 100%;
@@ -30,6 +31,15 @@ a {
   color: $db;
 }
 
+::selection {
+  color: #F9CA24;
+  background-color: #333;
+}
+
+.active {
+  color: $ctaGreen;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -54,6 +64,6 @@ a {
 // Large Screen
 @media (min-width: 1200px){
   .container {
-    width: 85%;
+    width: 1170px;
   }
 }

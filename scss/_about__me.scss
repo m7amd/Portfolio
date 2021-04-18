@@ -2,6 +2,7 @@
   overflow: hidden;
   .content {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     .text {
       flex: 2;
@@ -77,6 +78,44 @@
       .third {
         background-color: #FF7675;
         bottom: -60px;
+      }
+    }
+  }
+}
+
+// Small 
+@media (min-width: 375px) and (max-width: 768px) {
+  .about-me {
+    .content { 
+      padding: 200px 0;
+      flex-flow: column wrap;
+      gap: 185px;
+      .circlles {
+        .one {
+          left: 60px;
+        }
+        .two {
+          right: 60px;
+        }
+      }
+    }
+  }
+}
+// Medium 
+@media (min-width: 768px) and (max-width: 992px){
+  .about-me {
+    .content {
+      gap: 100px;
+      .circlles {
+        .one {
+          left: 97px;
+        }
+        .two {
+          right: 80px;
+        }
+        .third {
+          bottom: 25px;
+        }
       }
     }
   }

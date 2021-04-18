@@ -1,3 +1,7 @@
+.pd {
+  padding: 150px 0;
+  margin: 150px 0; }
+
 .heading {
   text-align: center; }
   .heading h1 {
@@ -7,19 +11,32 @@
     .heading h1::after {
       content: '';
       position: absolute;
-      left: 34%;
+      left: 38%;
       bottom: 149px;
       text-align: center;
       display: block;
       margin: 0 auto;
-      width: 426px;
+      width: 437px;
       height: 10px;
       background-color: #00B894;
       filter: blur(19px); }
 
-.pd {
-  padding: 150px 0; }
-
+@media (min-width: 375px) and (max-width: 576px) {
+  .heading h1::after {
+    width: 438px;
+    left: 13%; } }
+@media (min-width: 575px) and (max-width: 768px) {
+  .heading h1::after {
+    width: 437px;
+    left: 18%; } }
+@media (min-width: 767px) and (min-width: 992px) {
+  .heading h1::after {
+    width: 493px;
+    left: 35%; } }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .heading h1::after {
+    width: 438px;
+    left: 30%; } }
 header {
   overflow: hidden;
   width: 100%;
@@ -61,7 +78,7 @@ header {
     header .content nav .btn {
       margin-left: 38px;
       padding: 8px 30px;
-      border: 1px solid #00B894;
+      border: 2px solid #00B894;
       border-radius: 4px;
       color: #fff;
       background-color: #00B894;
@@ -98,28 +115,37 @@ header {
       width: 181px;
       height: 46px;
       text-align: center;
+      border-radius: 4px;
       line-height: 43px;
       transition: .3s; }
     header .container .hero .text .btns .green {
       margin-right: 10px;
       background-color: #00B894;
-      border: 1px solid #00B894;
+      border: 2px solid #00B894;
       color: #fff; }
       header .container .hero .text .btns .green:hover {
         color: #323232;
         background-color: transparent; }
     header .container .hero .text .btns .black {
       background-color: #323232;
-      border: 1px solid #323232;
+      border: 2px solid #323232;
       color: #fff; }
       header .container .hero .text .btns .black:hover {
         color: #323232;
         background-color: transparent; }
 
+@media (min-width: 375px) and (max-width: 992px) {
+  header .content nav {
+    display: none; }
+  header .container .hero {
+    text-align: center; }
+    header .container .hero p {
+      margin: 0 auto; } }
 .about-me {
   overflow: hidden; }
   .about-me .content {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center; }
     .about-me .content .text {
       flex: 2; }
@@ -181,12 +207,30 @@ header {
         background-color: #FF7675;
         bottom: -60px; }
 
+@media (min-width: 375px) and (max-width: 768px) {
+  .about-me .content {
+    padding: 200px 0;
+    flex-flow: column wrap;
+    gap: 185px; }
+    .about-me .content .circlles .one {
+      left: 60px; }
+    .about-me .content .circlles .two {
+      right: 60px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .about-me .content {
+    gap: 100px; }
+    .about-me .content .circlles .one {
+      left: 97px; }
+    .about-me .content .circlles .two {
+      right: 80px; }
+    .about-me .content .circlles .third {
+      bottom: 25px; } }
 .services {
   overflow: hidden; }
   .services .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 70px 20px; }
+    gap: 70px 25px; }
     .services .row P {
       color: #707070;
       line-height: 1.6;
@@ -210,6 +254,59 @@ header {
     .services .row .six i {
       color: #4834D4; }
 
+@media (min-width: 375px) and (max-width: 576px) {
+  .services .row {
+    grid-template-columns: 1fr;
+    text-align: center; } }
+@media (min-width: 575px) and (max-width: 768px) {
+  .services .row {
+    grid-template-columns: 1fr 1fr;
+    text-align: center; } }
+@media (min-width: 992px) {
+  .services .row {
+    text-align: left;
+    grid-template-columns: repeat(3, 1fr); } }
+.skills {
+  overflow: hidden;
+  background-color: #00B894;
+  color: #fff; }
+  .skills h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 68px; }
+  .skills .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px; }
+    .skills .content .col-1 > span {
+      display: block;
+      margin-bottom: 5px; }
+    .skills .content .col-1 .progress {
+      overflow: hidden;
+      width: 400px;
+      height: 15px;
+      background-color: rgba(255, 255, 255, 0.16);
+      margin-bottom: 30px;
+      border-radius: 10px; }
+      .skills .content .col-1 .progress > span {
+        display: block;
+        height: 100%;
+        width: 0;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        color: #00B894;
+        text-align: right;
+        font-size: 14px;
+        padding-right: 10px;
+        font-weight: 600; }
+
+@media (min-width: 380px) and (max-width: 992px) {
+  .skills .content {
+    text-align: center;
+    grid-template-columns: 1fr; }
+    .skills .content .progress {
+      margin: 0 auto; } }
 html {
   font-size: 100%;
   box-sizing: border-box; }
@@ -232,6 +329,13 @@ a {
   text-decoration: none;
   color: #323232; }
 
+::selection {
+  color: #F9CA24;
+  background-color: #333; }
+
+.active {
+  color: #00B894; }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -246,6 +350,6 @@ a {
     width: 970px; } }
 @media (min-width: 1200px) {
   .container {
-    width: 85%; } }
+    width: 1170px; } }
 
 /*# sourceMappingURL=main.css.map */
