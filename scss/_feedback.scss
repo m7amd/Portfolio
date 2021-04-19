@@ -1,0 +1,42 @@
+.feedback {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    text-align: left;
+    .card {
+      padding: 46px 18px;
+      i {
+        font-size: 27px;
+        color: #E66D6D;
+      }
+      p {
+        margin: 15px 0 25px;
+        line-height: 1.6;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img {
+          border-radius: 50%;
+        }
+        h4 {
+          font-size: 15px;
+        }
+        span {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+// Small 
+@media (min-width: 375px) and (max-width: 768px) {
+  .feedback {
+    .content {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -37,6 +37,22 @@ $gray: #707070;
   }
 }
 
+.heading-2 {
+  position: relative;
+  padding-bottom: 7px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 44px;
+    height: 2px;
+    background-color: $ctaGreen;
+  }
+}
+
 // Small 
 @media (min-width: 375px) and (max-width: 576px) {
   .heading {

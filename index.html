@@ -25,18 +25,18 @@
               <a href="index.html">Portfolio</a>
             </div>
             <nav>
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Potfolio</a>
-              <a href="#">Blog</a>
-              <a href="#" class="btn">Contact Me</a>
+              <a href="#" data-scroll="home">Home</a>
+              <a href="#" data-scroll="about">About</a>
+              <a href="#" data-scroll="services">Services</a>
+              <a href="#" data-scroll="portfolio">Potfolio</a>
+              <a href="#" data-scroll="blog">Blog</a>
+              <a href="#" class="btn" data-scroll="contact">Contact Me</a>
             </nav>
           </div>
 
         <!-- Hero Section  -->
 
-          <div class="hero" id="home">
+          <div class="hero block" id="home">
             <div class="text">
               <p>
                 Hi Myself <span>Jhon Smith</span>
@@ -61,11 +61,11 @@
 
     <!-- About Me  -->
 
-    <div class="about-me pd" id="about-me">
+    <div class="about-me pd block" id="about">
       <div class="container">
         <div class="content">
           <div class="text">
-            <h3>
+            <h3 class="heading-2">
               About Me
             </h3>
             <p>
@@ -104,7 +104,7 @@
 
     <!-- Services  -->
 
-    <div class="services pd" id="services">
+    <div class="services pd block" id="services">
       <section class="heading">
         <h1>
           My Provide Services
@@ -219,12 +219,140 @@
 
     <!-- Latest Projects  -->
 
-
+    <div class="latest pd block" id="portfolio">
+      <div class="container">
+        <div class="heading">
+          <h1>
+            Latest Project
+          </h1>
+        </div>
+        <div class="links">
+          <a href="#" class="list" data-filter="all">All</a>
+          <a href="#" class="active list" data-filter="design">Graphic Design </a>
+          <a href="#" class="list" data-filter="development">Web development</a>
+          <a href="#" class="list" data-filter="editing">Video Editing</a>
+          <a href="#" class="list" data-filter="photography">Photography</a>
+          <a href="#" class="list" data-filter="others">Others</a>
+        </div>
+        <div class="content">
+          <div class="img all">
+            <img src="images/pexels-polina-zimmerman-3747266.jpg" draggable="false" alt="">
+          </div>
+          <div class="img design">
+            <img src="images/pexels-thisisengineering-3861964.jpg" draggable="false" alt="">
+          </div>
+          <div class="img development">
+            <img src="images/pexels-erik-mclean-5628244.jpg" draggable="false" alt="">
+          </div>  
+          <div class="img editing">
+            <img src="images/pexels-omar-markhieh-1447264.jpg" draggable="false" alt="">
+          </div>
+          <div class="img photography">
+            <img src="images/pexels-daria-sannikova-7236800.jpg" draggable="false" alt="">
+          </div>
+          <div class="img others">
+            <img src="images/pexels-anna-nekrashevich-6801869.jpg" draggable="false" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Latest Projects  -->
+
+
+    <!-- Client Feedback  -->
+
+    <div class="feedback pd block" id="blog">
+      <div class="heading">
+        <h1>
+          Client Feedback
+        </h1>
+        <div class="container">
+          <div class="content">
+            <div class="card">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+              </p>
+              <div class="info">
+                <img src="images/pexels-anastasiya-lobanovskaya-789296 (1).jpg" draggable="false" alt="">
+                <div class="text">
+                  <h4>
+                    Conrad Hegarty
+                  </h4>
+                  <span>
+                    CEO, Codeddas
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+              </p>
+              <div class="info">
+                <img src="images/pexels-jackson-david-3147528.jpg" draggable="false" alt="">
+                <div class="text">
+                  <h4>
+                    Patricia Moreno
+                  </h4>
+                  <span>
+                    CEO, Codeddas
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client Feedback  -->
+
+    <!-- Contact Us  -->
+
+    <div class="contact-us pd block" id="contact">
+        <div class="content">
+          <div class="image">
+            <img src="images/pexels-picjumbocom-225232.jpg" draggable="false" alt="">
+          </div>
+          <div class="container">
+            <div class="text">
+              <h3 class="heading-2">
+                We give solution
+              </h3>
+              <p>
+                If you have any questions. <br>
+                please don't hesitate to contact us.
+              </p>
+              <form action="">
+                <span>Name</span>
+                <div class="col-1">
+                  <input type="text">
+                  <div class="email">
+                    <label>Email Address</label>
+                    <input type="email">
+                  </div>
+                </div>
+                <span>Message</span>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <a href="#" class="send-msg">Send Message</a>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us  -->
+
+
+    
     
     
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

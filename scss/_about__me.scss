@@ -11,21 +11,6 @@
       flex: 1;
     }
     .text {
-      h3 {
-        position: relative;
-        padding-bottom: 7px;
-        font-size: 20px;
-        margin-bottom: 40px;
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 44px;
-          height: 2px;
-          background-color: $ctaGreen;
-        }
-      }
       p:first-of-type {
         font-size: 26px;
         font-weight: bold;
