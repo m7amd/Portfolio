@@ -56,7 +56,7 @@ $( () =>{
   $('html').niceScroll({
     touchbhavior: true,
     zindex: '999999',
-    scrollspeed: '10', // 30
+    scrollspeed: '5', // 30
     cursorcolor:"#e58e26",
     background:"#353b48",
     cursorborder:"1px solid #F9CA24",
