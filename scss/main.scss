@@ -6,6 +6,8 @@
 @import 'latest__projects';
 @import 'feedback';
 @import 'contact__us';
+@import 'news';
+@import 'footer';
 
 html {
   font-size: 100%;
@@ -45,6 +47,21 @@ a {
 
 .active {
   color: $ctaGreen;
+}
+
+.top {
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #112121;
+  color: #00B894;
+  line-height: 50px;
+  text-align: center;
+  font-size: 21px;
 }
 
 .container {

@@ -56,7 +56,7 @@ $( () =>{
   $('html').niceScroll({
     touchbhavior: true,
     zindex: '999999',
-    scrollspeed: '18', // 30
+    scrollspeed: '10', // 30
     cursorcolor:"#e58e26",
     background:"#353b48",
     cursorborder:"1px solid #F9CA24",
@@ -70,10 +70,61 @@ $( () =>{
 
     e.preventDefault();
 
-    console.log(image.filter('.' + value));
-
     $(this).addClass('active').siblings().removeClass('active');
 
+  });
+
+  // Scroll To Top Button 
+
+  const btn = $('.top');
+
+  $(window).on('scroll', function () {
+
+    if ($(window).scrollTop() >= 1200) {
+      
+      if (btn.is(':hidden')) {
+        
+        btn.fadeIn(500);
+
+      }
+
+    } else {
+      
+      btn.fadeOut(500);
+
+    }
+
+  });
+
+  btn.on('click', function (e) {
+
+    e.preventDefault();
+
+    $('html, body').animate({
+
+      scrollTop: 0
+
+    }, 1000);
+
+  });
+
+  // Toggle Humbrger Menu On Click 
+
+  const humbrger = $('.header .link');
+
+  $('.humbrger').on('click', function () {
+
+    $(this).toggleClass('show');
+
+    if (humbrger.is(':hidden')) {
+      
+      humbrger.show()
+
+    } else {
+      
+      humbrger.hide()
+
+    }
   });
 
 });

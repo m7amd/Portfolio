@@ -1,19 +1,16 @@
 .contact-us {
   overflow: hidden;
   .content {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
     .image {
-      flex: 1;
       img {
         max-width: 100%;
+        height: auto;
       }
     }
     .text {
-      padding-top: 30px;
-      flex: 1;
       .heading-2 {
         font-size: 18px;
         margin-bottom: 25px;
@@ -77,5 +74,21 @@
   }
 }
 
-// // Small 
-// @media (min-width: 375px) and (max-width: 576px)
+// Small 
+@media (min-width: 375px) and (max-width: 992px) {
+  .contact-us {
+    padding: 0 30px;
+    .content {
+      grid-template-columns: 1fr;
+      .image {
+        img {
+          height: 100%;
+        }
+      }
+      form {
+        max-width: 400px;
+        display: block;
+      }
+    }
+  }
+}
